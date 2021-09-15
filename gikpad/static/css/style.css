@@ -1,0 +1,85 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+.navbar {
+    background-color: #23395d;
+    padding: 30px;
+
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    color: azure;
+    font-weight: 500;
+}
+
+nav a {
+    font-size: 25px;
+    color: azure;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+nav a img {
+    height: 80px;
+    width: 160px;
+}
+
+nav .collapse .media ul li {
+    list-style: none;
+    display: inline;
+    padding: 3px;
+
+}
+
+
+.media {
+    margin-left: 40%;
+}
+
+.info ul li {
+    list-style: none;
+    display: inline;
+    padding: 3px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/coding.jpg');
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+.info {
+    min-height: 7vh;
+
+}
+
+.wrapper>h1 {
+    font-style: italic;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.statements {
+    text-align: center;
+    width: 70%;
+    color: #23395d;
+
+}
