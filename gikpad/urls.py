@@ -8,7 +8,7 @@ urlpatterns=[
     path('',views.index,name = 'index'),
     path('about',views.about,name = 'about'),
     path('services',views.services,name = 'services'),
-   
+    path('contacts',views.contacts,name = 'contacts'),
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

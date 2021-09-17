@@ -65,8 +65,8 @@ nav .collapse .media ul li {
 
 .info {
     min-height: 7vh;
-    background-color:rgb(209, 207, 207);
-    /* opacity: 0.5; */
+    /* background-color:blue; */
+    opacity: 0.5;
 
 }
 
@@ -199,8 +199,8 @@ hr {
 
 }
 .footer{
-    background-color:rgb(209, 207, 207);
-    color:#23395d;
+    background-color: #23395d;
+    color:white;
     display:flex;
     align-items:center;
     justify-content: center;
