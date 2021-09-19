@@ -5,8 +5,155 @@
 {% block content %}
 
 
-    <div class="container"><br><br><br><br><br><br>
-        <h1 class="text-center">Contacts Page</h1>
+<div class="container-fluid">
+    <div class="row contacts-top">
+        <div class='overlay-contacts offset-md-3 py-2'>
+            <h3>Contact us</h3>
+            <hr>
+            <h4 class="text-center">
+                We are a software development company consisting of IT professionals with a mission of providing
+                technical
+                solutions to challenges faced by businesses firms.
+            </h4>
+        </div>
+
     </div>
-    
+    <div class="row contact">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5 py-4">
+         
+
+            
+
+            <form>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput mt-2">Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1 mt-2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Phone Number</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Enter Phone number">
+                    </div>
+                    <label for="service">
+                        <h4 class="select-service mt-2">Select service</h4>
+                    </label>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Web design and development
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Android application development
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Desktop application development
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            CCTV installation/Network solutions
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Computer repair and maintenance
+                        </label>
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputState">
+                            <h4 class="select-service mt-2">State</h4>
+                        </label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Kenya</option>
+                            <option>Burundi</option>
+                            <option>Djibouti</option>
+                            <option>Eritrea</option>
+                            <option>Ethiopia</option>
+                            <option>Rwanda</option>
+                            <option>Somalia</option>
+                            <option>South Sudan</option>
+                        </select>
+                    </div>
+                    <label for="service">
+                        <h4 class="select-service mt-2">How did you hear about us?</h4>
+                    </label>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Social media</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Friends/Colleague</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Web search</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">
+                            <h4 class="select-service mt-2">Your Message</h4>
+                        </label>
+                        <textarea class="form-control" type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Tell us more..."></textarea>
+                    </div>
+                    <!-- <script src='https://www.google.com/recaptcha/api.js'></script>
+                    <div class="g-recaptcha" data-sitekey="6Le6SXYcAAAAADMbN7QMzFkh-gdTtXLvReBV6XLK"></div> -->
+
+                    <button type="submit" class="btn mt-2 mb-2">Submit</button>
+                </form>
+
+        </div>
+        <div class="col-md-3 py-4">
+            <h3>Contacts address</h3>
+            <div class='addresses'>
+                <i class="bi bi-telephone-fill"><span class="phone-text">+2546325787</span></i>
+
+                <i class="bi bi-envelope-fill"><span class="phone-text">info@gikpad.com</span></i>
+                <i class="bi bi-geo-alt-fill"><span class="phone-text">Nairobi</span></i>
+         
+
+            </div>
+            <div class="smedia">
+                <h4>Follow us on social Media</h4>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"> <i class="bi bi-youtube"></i></a>
+            </div>
+          
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+
+
+</div>
+
 {% endblock %}

@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-4$+=(%un30r6=wb1^bmp$a$wlvfh9kr7x*avy8$1o_bm%2f=v9
 DEBUG = True
 
 ALLOWED_HOSTS = []
+GOOGLE_RECAPTCHA_SECRET_KEY = '6Le6SXYcAAAAAJXuF9au3eSZpCIXavwvz87v2Nz5'
 
 
 # Application definition
