@@ -2,7 +2,7 @@
 
 .navbar {
     background-color: #23395d;
-    padding: 30px;
+    padding: 40px;
 
 }
 
@@ -16,7 +16,7 @@ nav a {
     font-size: 25px;
     color: azure;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 nav a img {
@@ -256,7 +256,96 @@ nav .collapse .media ul li {
 }
 
 
-.addresses{
-    margin: 40px;
-    color:red;
+.addresses {
+    margin: 30px;
+    color: #23395d;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.phone-text {
+    padding: 15px;
+
+}
+
+.addresses .bi {
+    font-size: 25px;
+
+
+}
+
+.addresses i {
+    margin-bottom: 10px;
+}
+
+.addresses h4 {
+    font-style: italic;
+}
+
+.smedia a {
+    display: inline;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.bi-facebook {
+    color: #4267B2;
+}
+
+.bi-linkedin {
+    color: #2867B2;
+
+}
+
+.bi-twitter {
+    color: #657786;
+
+}
+
+.bi-youtube {
+    color: red;
+}
+
+.requests {
+    background-color: rgb(209, 207, 207);
+    color: #23395d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.requests h1 {
+    font-weight: bold;
+}
+
+.user-info {
+    color: #23395d;
+    background-color: rgb(88, 88, 88);
+}
+
+.table {
+    color: white;
+}
+
+thead {
+    background-color:#23395d;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(122, 122, 122);
+}
+
+tr:hover {
+    background-color: #23395d;
+}
+
+
+.reg h1{
+font-weight: bold;
+}
+.full-screen{
+    height:100vh;
 }
