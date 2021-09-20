@@ -5,8 +5,68 @@
 {% block content %}
 
 
-    <div class="container"><br><br><br><br><br><br>
-        <h1 class="text-center">Contacts Page</h1>
+<div class="container-fluid">
+    <div class="row contacts-top">
+        <div class='overlay-contacts offset-md-3 py-2'>
+            <h3>Contact us</h3>
+            <hr>
+            <h4 class="text-center">
+                We are a software development company consisting of IT professionals with a mission of providing
+                technical
+                solutions to challenges faced by businesses firms.
+            </h4>
+        </div>
+
     </div>
-    
+    <div class="row contact">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5 py-4 clientform">
+            {% for msg in messages %}
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Hey !</strong> {{msg}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+
+
+            <form class="form" method="post" novalidate enctype="multipart/form-data">
+                {% csrf_token %} ​ {% bootstrap_form form layout='block' %}
+                <button type="submit" class="btn btn-sm btn-primary" style="margin-top: 10px; margin-left: 5px">
+                    Submit
+                </button>
+            </form>
+
+
+
+        </div>
+        <div class="col-md-3 py-4">
+            <h3>Contacts address</h3>
+            <div class='addresses'>
+                <i class="bi bi-telephone-fill"><span class="phone-text">+2546325787</span></i>
+
+                <i class="bi bi-envelope-fill"><span class="phone-text">info@gikpad.com</span></i>
+                <i class="bi bi-geo-alt-fill"><span class="phone-text">Nairobi</span></i>
+
+
+            </div>
+            <div class="smedia">
+                <h4>Follow us on social Media</h4>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"> <i class="bi bi-youtube"></i></a>
+            </div>
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+
+
+</div>
+
 {% endblock %}

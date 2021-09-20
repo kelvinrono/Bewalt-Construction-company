@@ -1,0 +1,43 @@
+{%extends "base.html"%}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+   
+    <div class="row py-">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 reg card card-body">
+            <h1 >Register</h1>
+
+            {% if form.errors %}
+            <p> Please check your details </p>
+            {% endif %}
+            <div class="panel-default">
+
+                <div class="panel-body">
+
+                    <form action="/accounts/register/" method="POST">
+                        {% csrf_token %}
+                        {% bootstrap_form form %}
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-outline-info btn-sm" value="Register">
+                        </div>
+
+                        <input type="hidden" name="newprofile" value="newprofile">
+
+                    </form>
+                    <div class="border-bottom pt-3">
+                        <p class="text-muted">Already have an account?<a class="ml-2"
+                                href="{% url 'login' %}"><i>Login Here</i></a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+{% endblock %}

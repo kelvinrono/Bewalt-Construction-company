@@ -2,7 +2,7 @@
 
 .navbar {
     background-color: #23395d;
-    padding: 30px;
+    padding: 40px;
 
 }
 
@@ -16,7 +16,7 @@ nav a {
     font-size: 25px;
     color: azure;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 nav a img {
@@ -65,7 +65,7 @@ nav .collapse .media ul li {
 
 .info {
     min-height: 7vh;
-    background-color:rgb(209, 207, 207);
+    background-color: rgb(209, 207, 207);
     /* opacity: 0.5; */
 
 }
@@ -148,7 +148,7 @@ nav .collapse .media ul li {
     text-decoration: underline;
 }
 
-hr {
+.middle hr {
     border: 2px solid white;
     width: 8%;
 }
@@ -198,12 +198,154 @@ hr {
     font-weight: bold;
 
 }
-.footer{
-    background-color:rgb(209, 207, 207);
-    color:#23395d;
-    display:flex;
-    align-items:center;
+
+.footer {
+    background-color: rgb(209, 207, 207);
+    color: #23395d;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    min-height:8vh;
-    font-size:18px;
+    min-height: 8vh;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #23395d;
+    color: white;
+}
+
+.contact-headings {
+    color: #23395d;
+    font-weight: bold;
+}
+
+.select-service {
+    color: #23395d;
+}
+
+.contacts-top {
+    background-image: linear-gradient(rgba(9, 4, 73, 0.5), rgba(0, 0, 0, 0.5)), url('../img/contacts-7.jpg');
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+
+.overlay-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+}
+
+.overlay-contacts h3 {
+
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+    color: #ffffff;
+
+
+
+}
+
+.overlay-contacts hr {
+    border: 2px solid white;
+    width: 6%;
+}
+
+
+.addresses {
+    margin: 30px;
+    color: #23395d;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.phone-text {
+    padding: 15px;
+
+}
+
+.addresses .bi {
+    font-size: 25px;
+
+
+}
+
+.addresses i {
+    margin-bottom: 10px;
+}
+
+.addresses h4 {
+    font-style: italic;
+}
+
+.smedia a {
+    display: inline;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.smedia .bi-facebook {
+    color: #4267B2;
+}
+
+.smedia .bi-linkedin {
+    color: #2867B2;
+
+}
+
+.smedia .bi-twitter {
+    color: #657786;
+
+}
+
+.smedia .bi-youtube {
+    color: red;
+}
+
+.requests {
+    background-color: rgb(209, 207, 207);
+    color: #23395d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.requests h1 {
+    font-weight: bold;
+}
+
+.user-info {
+    color: #23395d;
+    background-color: rgb(88, 88, 88);
+}
+
+.table {
+    color: white;
+}
+
+thead {
+    background-color:#23395d;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(122, 122, 122);
+}
+
+tr:hover {
+    background-color: #23395d;
+}
+
+
+.reg h1{
+font-weight: bold;
+}
+.full-screen{
+    height:100vh;
 }
