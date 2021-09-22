@@ -1,0 +1,5 @@
+Hello {{name}},
+Gikpad Technologies have received your request. One of our staff will review your request and get back to you on a phone call as soon as possible. 
+Thank you for choosing us.
+Best regards,Gikpad Technologies
+Ideal Services for your business
