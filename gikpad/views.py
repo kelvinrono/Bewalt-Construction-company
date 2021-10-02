@@ -3,6 +3,7 @@ from .forms import ClientForm,RegisterForm
 from .models import Clientrequest
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from .email import send_welcome_email,send_director_email
 
 
 
@@ -34,13 +35,26 @@ def contacts(request):
     if request.method == 'POST':
         form=ClientForm(request.POST,request.FILES)
         if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+
+            # recipient = ClientForm(name = name,email =email)
+            # recipient.save()
             request = form.save(commit=False)
+            name = request.name
+            email = request.email
+            admin_name='Director'
+           
+            send_welcome_email(name,email)
+            send_director_email(admin_name)
+                 
+
             request.save()
-            # messages.success(request, "Data inserted successfully")
+            # messages.success(request, f'Your request has been received. Check your Email!')
 
             return redirect('contacts')
     else:
-        # messages.warning(request, "Data was not inserted")
+        # messages.warning(request, f'Data was not inserted')
         form=ClientForm()
     params={
         'form':form
