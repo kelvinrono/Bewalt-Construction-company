@@ -290,21 +290,21 @@ nav .collapse .media ul li {
     font-size: 25px;
 }
 
-.bi-facebook {
+.smedia .bi-facebook {
     color: #4267B2;
 }
 
-.bi-linkedin {
+.smedia .bi-linkedin {
     color: #2867B2;
 
 }
 
-.bi-twitter {
+.smedia .bi-twitter {
     color: #657786;
 
 }
 
-.bi-youtube {
+.smedia .bi-youtube {
     color: red;
 }
 

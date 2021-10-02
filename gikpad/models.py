@@ -21,5 +21,5 @@ class Clientrequest(models.Model):
     class Meta:
         ordering = ["-pk"]
 
-
+    
 

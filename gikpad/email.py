@@ -18,7 +18,7 @@ def send_director_email(admin_name):
     # Creating message subject and sender
     subject = 'New Client Request'
     sender = 'gikpadtechnologies@gmail.com'
-    admin_email=['ibrakipz7@gmail.com','fitstargilii1194@gmail.com','cheruiyotk97@gmail.com','']
+    admin_email=['ibrakipz7@gmail.com']
 
     #passing in the context vairables
     text_content = render_to_string('email/request-email.txt',{"admin_name": admin_name})
