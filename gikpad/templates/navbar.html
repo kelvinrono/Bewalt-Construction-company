@@ -2,21 +2,22 @@
     <div class="row info">
         <ul>
             <li>
-                <i class="bi bi-telephone-fill"> +2546325787</i>
+                <i class="bi bi-telephone-fill"> 0202082080 / 0714288208</i>
             </li>
             <li>
-                <i class="bi bi-clock-fill"> Mon - Sat: 9:00 - 17:00</i>
+                <i class="bi bi-clock-fill"> P. O. BOX 1225-20200
+                    KERICHO</i>
 
             </li>
             <li>
-                <i class="bi bi-envelope-fill">info@gikpad.com</i>
+                <i class="bi bi-envelope-fill">bewaltlimited@gmail.com</i>
             </li>
         </ul>
 
     </div>
 </div>
 <nav class="navbar py-1 navbar-expand-lg">
-    <a class="navbar-brand" href="/"><img src="../static/img/GikpadLogo1.png" alt="Gikpad Logo"></a>
+    <a class="navbar-brand" href="/"><img src="../static/img/logo.jpeg" alt="" srcset=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,14 +37,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="{%url 'contacts'%}">Contact us</a>
             </li>
-            {% if user.is_authenticated%}
             <li class="nav-item">
-                <a class="nav-link" href="{%url 'logout'%}">Logout</a>
+                <a class="nav-link" href="{%url 'projects'%}">Projects</a>
             </li>
-            {% endif %}
+        
 
         </ul>
-        <div class="media">
+        <!-- <div class="media">
             <ul>
                 <li>
                     <a href="#"><i class="bi bi-facebook"></i></a>
@@ -62,7 +62,7 @@
                 </li>
 
             </ul>
-        </div>
+        </div> -->
 
     </div>
 </nav>

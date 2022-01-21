@@ -13,9 +13,9 @@ class RegisterForm(UserCreationForm):
 class ClientForm(forms.ModelForm):
     class Meta:
         model = Clientrequest
-        fields = ('name', 'email','phone', 'service','country','how','message')
+        fields = ('name', 'email','phone','message')
         labels = {
-            "how": "How did you hear about us",
+            
            
         }
         widget=forms.RadioSelect

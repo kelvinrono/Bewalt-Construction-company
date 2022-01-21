@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .forms import ClientForm,RegisterForm
-from .models import Clientrequest
+from .models import gallery
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .email import send_welcome_email,send_director_email
@@ -30,6 +30,15 @@ def about(request):
 
 def services(request):
     return render(request, 'services.html')
+
+def projects(request):
+    
+    projects=gallery.objects.all()
+
+    context={
+        'projects':projects
+    }
+    return render(request, 'projects.html', context)
 
 def contacts(request):
     if request.method == 'POST':
@@ -67,3 +76,4 @@ def advance(request):
     requests=Clientrequest.objects.all()
 
     return render(request, 'advance.html',{"requests": requests})
+

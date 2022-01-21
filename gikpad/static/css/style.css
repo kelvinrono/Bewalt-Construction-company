@@ -1,11 +1,29 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 .navbar {
-    background-color: #23395d;
+    background-color: #cc9b72;
     padding: 40px;
 
 }
 
+.history{
+    /* border:1px solid black;
+    border-radius:5px; */
+    width: 40vw;
+    text-align: center;
+    padding: 5px;
+    margin: 5px auto;
+
+}
+.history-wrraper{
+    background-color: #e2c6bc;
+
+}
+
+.slider{
+    height:50%;
+
+}
 .navbar ul li a {
     font-size: 20px;
     color: azure;
@@ -56,8 +74,8 @@ nav .collapse .media ul li {
 }
 
 .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/coding.jpg');
-    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/WhatsApp\ Image\ 2022-01-15\ at\ 13.19.35\ \(1\).jpeg');
+    min-height: 60vh;
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -67,7 +85,6 @@ nav .collapse .media ul li {
     min-height: 7vh;
     background-color: rgb(209, 207, 207);
     /* opacity: 0.5; */
-
 }
 
 .overlay {
@@ -89,7 +106,7 @@ nav .collapse .media ul li {
     color: white;
     margin: 20px;
     font-weight: bold;
-
+    
 
 }
 
@@ -103,11 +120,14 @@ nav .collapse .media ul li {
 
 
 .top {
-    color: #23395d;
+    color: #737962;
     background-color: white;
-    min-height: 20vh;
+    min-height: 10vh;
     border-bottom: 1px solid navy;
-
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
 
 }
 
@@ -119,9 +139,8 @@ nav .collapse .media ul li {
 }
 
 .middle1 {
-    background-image: linear-gradient(rgba(9, 4, 73, 0.5), rgba(0, 0, 0, 0.5)), url('../img/about-image.jpeg');
+    background-color: #d2b2a3;
     min-height: 60vh;
-    background-size: cover;
     background-position: center;
     width: 100%;
 
@@ -224,7 +243,7 @@ nav .collapse .media ul li {
 }
 
 .contacts-top {
-    background-image: linear-gradient(rgba(9, 4, 73, 0.5), rgba(0, 0, 0, 0.5)), url('../img/contacts-7.jpg');
+    background-image: linear-gradient(rgba(110, 106, 168, 0.5), rgba(115, 163, 161, 0.5)), url('../img/contacts-7.jpg');
     min-height: 60vh;
     background-size: cover;
     background-position: center;
@@ -259,7 +278,7 @@ nav .collapse .media ul li {
 .addresses {
     margin: 30px;
     color: #23395d;
-    font-size: 20px;
+    font-size: px;
     display: flex;
     flex-direction: column;
 
@@ -349,3 +368,15 @@ font-weight: bold;
 .full-screen{
     height:100vh;
 }
+
+.mission-vision{
+    height:50vh;
+    background-size: cover;
+    width:80vw;
+    
+
+}
+
+/* .project-container{
+
+} */

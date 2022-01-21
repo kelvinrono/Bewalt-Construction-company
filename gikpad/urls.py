@@ -14,6 +14,8 @@ urlpatterns=[
     path('about',views.about,name = 'about'),
     path('services',views.services,name = 'services'),
     path('contacts',views.contacts,name = 'contacts'),
+    path('projects',views.projects,name = 'projects'),
+
     path('advance',views.advance,name = 'advance'),
 ]
 if settings.DEBUG:
