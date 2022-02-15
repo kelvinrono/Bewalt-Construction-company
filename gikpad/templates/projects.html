@@ -5,13 +5,13 @@
 {% block content %}
 
 
-<div class="container project-container">
+<div class="container-fluid project-container">
 
     <div class="row">
 {% for project in projects %}
 
-<div class="col-md-3 m-2">
-    <div class="card h-100" style="width: 18rem;">
+<div class="col-md-3 mt-2">
+    <div class="card h-100">
         <img src="{{project.image.url}}" class="card-img-top img-responsive h-50" alt="Project image">
         <div class="card-body">
         <p class="card-text">{{project.description}}</p>
